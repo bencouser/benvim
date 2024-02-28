@@ -19,3 +19,5 @@ git clone https://github.com/bencouser/benvim.git %userprofile%\AppData\Local\nv
 ```
 git clone https://github.com/bencouser/benvim.git $env:USERPROFILE\AppData\Local\nvim\ 
 ```
+
+Run the following command to get started: `nvim .`
