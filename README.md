@@ -3,7 +3,7 @@ new config, taking elements from kickstart and separating into a new atomised di
 
 Firstly install neovim: [Neovim Installation Guide](https://github.com/neovim/neovim/blob/master/INSTALL.md)
 
-Clone kickstart.nvim:
+Clone this repo:
 
 - on Linux and Mac
 ```sh
