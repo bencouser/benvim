@@ -1,6 +1,8 @@
 # benvim
 new config, taking elements from kickstart and separating into a new atomised directory.
 
+Firstly install neovim: [Neovim Installation Guide](https://github.com/neovim/neovim/blob/master/INSTALL.md)
+
 Clone kickstart.nvim:
 
 - on Linux and Mac
