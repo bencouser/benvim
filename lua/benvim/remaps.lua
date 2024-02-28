@@ -56,6 +56,4 @@ end)
 vim.keymap.set("n", "<leader>ml", "f<Space>s<Enter><Esc>")
 
 -- moving between windows to leader w
-vim.keymap.set("n", "<leader>w", function()
-	vim.cmd("wincmd w | wincmd w")
-end)
+vim.keymap.set("n", "<leader>w", "<C-w><C-w>")
