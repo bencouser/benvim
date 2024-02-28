@@ -21,7 +21,6 @@ return { -- Collection of various small independent plugins/modules
 		--  and try some other statusline plugin
 		require("mini.statusline").setup()
 
-		-- ... and there is more!
 		--  Check out: https://github.com/echasnovski/mini.nvim
 	end,
 }
