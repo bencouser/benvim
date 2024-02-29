@@ -14,17 +14,6 @@ vim.keymap.set("n", "]d", vim.diagnostic.goto_next, { desc = "Go to next diagnos
 vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, { desc = "Open floating diagnostic message" })
 vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagnostics list" })
 
--- [[ Highlight on yank ]]
--- See `:help vim.highlight.on_yank()`
-local highlight_group = vim.api.nvim_create_augroup("YankHighlight", { clear = true })
-vim.api.nvim_create_autocmd("TextYankPost", {
-	callback = function()
-		vim.highlight.on_yank()
-	end,
-	group = highlight_group,
-	pattern = "*",
-})
-
 -- To Files
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
@@ -46,11 +35,6 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 -- disable ex mode
 vim.keymap.set("n", "Q", "<nop>")
 vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
-
--- shout out
-vim.keymap.set("n", "<leader><leader>", function()
-	vim.cmd("so")
-end)
 
 -- move a function parameter to MultiLine
 vim.keymap.set("n", "<leader>ml", "f<Space>s<Enter><Esc>")
