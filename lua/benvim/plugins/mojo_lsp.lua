@@ -28,6 +28,12 @@ return {
 					})
 				end,
 			})
+
+			local ft = require("Comment.ft")
+
+			ft.set("mojo", "#%s")
+
+			ft.mojo = "#%s"
 		end,
 	},
 }
