@@ -1,5 +1,8 @@
 -- [[ Basic Keymaps ]]
 
+-- Navigate to config file
+vim.keymap.set("n", "<leader>rc", ":e $MYVIMRC<CR>")
+
 -- Keymaps for better default experience
 -- See `:help vim.keymap.set()`
 vim.keymap.set({ "n", "v" }, "<Space>", "<Nop>", { silent = true })
